@@ -4,9 +4,9 @@
   "description": "Job Board API",
   "main": "index.js",
   "scripts": {
-    "dev": "ts-node src/server.ts",
-    "start": "node dist/server.js",
+    "dev": "ts-node-dev src/api/graphql.ts",
     "build": "tsc",
+    "start": "node dist/api/graphql.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
