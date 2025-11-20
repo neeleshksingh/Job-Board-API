@@ -1,7 +1,10 @@
 {
     "functions": {
-        "src/api/graphql.ts": {
+        "api/graphql.ts": {
             "maxDuration": 30
         }
+    },
+    "env": {
+        "NODE_ENV": "production"
     }
 }
