@@ -1,10 +1,15 @@
 {
-    "functions": {
-        "api/graphql.ts": {
-            "maxDuration": 30
+    "version": 2,
+    "builds": [
+        {
+            "src": "api/graphql.ts",
+            "use": "@vercel/node"
         }
-    },
-    "env": {
-        "NODE_ENV": "production"
-    }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "api/graphql.ts"
+        }
+    ]
 }
